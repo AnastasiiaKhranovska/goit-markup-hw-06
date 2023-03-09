@@ -312,14 +312,15 @@
         <div>
           <p class="footer-social-title">Subscribe</p>
           <div class="mail-footer">
-          <form class="footer-contact" action="footer-contact">
+          <form class="footer-contact">
           <label class="visualli-hidden" for="user-mail">
             <input class="footer-form-input" 
             type="email" 
             name="user-mail" 
             id="user-mail" 
-            value="E-mail" />
-            <!-- placeholder="Email" -->
+            placeholder="Email"
+             />
+        
             </label></form>
           <button type="submit" class="footer-send">Subscribe
             <svg class="mail-ftr">
@@ -332,14 +333,45 @@
         </div>
             
     </footer>
+    
     <div class="backdrop is-hidden" data-modal>
 <div class="modal">
+  
   <button class="modal-close" type="button" data-modal-close> 
     <a class="buttom-close" href="#">
     <svg class="cls-btm">
       <use href="./images/icons/vector.svg#icon-Vector5"> </use>
       </svg> </a>
   </button> 
+
+<div>
+  <form class="form" autocomplete="on">
+  <h3 class="modal-contact">Leave your contacts and we will call you back</h3>
+
+  <div class="form-field first-child">
+  <label class="form-label" for="name">Name</label>
+  <input class="form-input" type="text" name="name" id="name" autofocus />
+  </div>
+  <div class="form-field">
+  <label class="form-label" for="tel">Phone</label>
+  <input class="form-input" type="tel" name="tel" id="tel" />
+  </div>
+  <div class="form-field">
+  <label class="form-label" for="mail">Email</label>
+  <input class="form-input" type="email" name="email" id="email" />
+  </div>
+  <div class="form-field last-child">
+  <label class="form-label" for="comment">Comment</label>
+  <textarea class="form-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Text input"></textarea>
+  </div>
+  <div class="">
+  <input type="checkbox" name="policy" id="policy" />
+  <label for="policy">I accept the terms and conditions of the Privacy Policy</label>
+  </div>
+  <div class="btm-modal">
+  <button class="button-modal" type="submit">Send</button></div>
+</form>
+</div>
 </div>
     </div>
     <script src="./js/modal.js"></script>
