@@ -145,8 +145,6 @@ gap: 40px;
     letter-spacing: 0.04em;
     font-family: 'Roboto', sans-serif;
 }
-.btn-blue { 
-}
  .button-blue {
     color: var(--color-brand);
     background-color: var(--color-white);
@@ -677,7 +675,7 @@ width: 169px;
 }
 .svg:hover,
 .svg:focus {
-    fill: var(--color-brand;)
+    fill: var(--color-brand);
 }
 .svg-name {
     width: 18px;
