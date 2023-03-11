@@ -343,33 +343,42 @@
       <use href="./images/icons/vector.svg#icon-Vector5"> </use>
       </svg> </a>
   </button> 
-
-<div>
-  <form class="form" autocomplete="on">
-  <h3 class="modal-contact">Leave your contacts and we will call you back</h3>
-
+<h3 class="modal-contact">Leave your contacts and we will call you back</h3>
+<form class="form" autocomplete="on"></form>
+<div class="modal-block">
   <div class="form-field first-child">
   <label class="form-label" for="name">Name</label>
   <input class="form-input" type="text" name="name" id="name" autofocus />
-  </div>
+  <svg class="svg svg-name">
+    <use href="./images/icons/modal.svg#icon-person">  </use>
+  </svg>
+</div>
   <div class="form-field">
   <label class="form-label" for="tel">Phone</label>
   <input class="form-input" type="tel" name="tel" id="tel" />
+  <svg class="svg svg-phone">
+    <use href="./images/icons/modal.svg#icon-phone">  </use>
+  </svg>
   </div>
   <div class="form-field">
   <label class="form-label" for="mail">Email</label>
   <input class="form-input" type="email" name="email" id="email" />
+  <svg class="svg svg-email">
+    <use href="./images/icons/modal.svg#icon-email">  </use>
+  </svg>
   </div>
   <div class="form-field last-child">
   <label class="form-label" for="comment">Comment</label>
   <textarea class="form-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Text input"></textarea>
   </div>
-  <div class="">
-  <input type="checkbox" name="policy" id="policy" />
-  <label for="policy">I accept the terms and conditions of the Privacy Policy</label>
-  </div>
+  <div class="checkbox-form">
+  <input class="checkbox-input" type="checkbox" name="policy" id="policy" required />
+  <span class="icon"></span> 
+  <label class="checkbox-label" for="policy">I accept the terms and conditions of the 
+   <a href=""> Privacy Policy </a></label>
+</div>
   <div class="btm-modal">
-  <button class="button-modal" type="submit">Send</button></div>
+  <button class="button-modal" type="submit" disabled>Send</button></div>
 </form>
 </div>
 </div>
