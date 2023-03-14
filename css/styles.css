@@ -514,11 +514,21 @@ border: 1px solid var(--color-inverted);
 border-radius: 4px;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 color: var(--color-inverted);
+padding: 8px 16px;
 }
 .visualli-hidden {
     color: var(--color-inverted);
     width: 264px;
-        height: 40px;
+    height: 40px;
+    
+}
+.footer-form-input::placeholder {
+    color: var(--color-inverted);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    
 }
 /* .visualli-hidden {
     white-space: nowrap;
@@ -576,18 +586,17 @@ color: var(--color-inverted);
 .buttom-close:focus .cls-btm {
     fill: var(--color-inverted);
 } 
-.buttom-close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .cls-btm {
     width: 8px;
     height: 8px; 
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-block{
     font-size: 12px;
@@ -675,7 +684,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 56px;
     cursor: pointer;
 }
-
 .btm-modal {
     display: flex;
     justify-content: center;
